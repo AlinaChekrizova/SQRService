@@ -7,7 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SQRServiceTest<two, one> {
     @ParameterizedTest
-    @CsvSource(value = {"'another limits',100,250,6",
+    @CsvSource
+            (value = {"'another limits',100,250,6",
             "'increased limits not include range 10-99',10000,290000,0",
             "'decreased limits not include range 10-99',1,99,0",
             "'limits include all range 10-99',100,10000,90",
